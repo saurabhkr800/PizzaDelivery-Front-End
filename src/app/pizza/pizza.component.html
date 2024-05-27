@@ -1,0 +1,24 @@
+<p>pizza works!</p>
+
+<form (ngSubmit)="onSubmit()">
+
+    Pizza Name : <input type="text" name="pizzaName" [(ngModel)] = 'credentials.pizzaName'/><br><br>
+    Pizza Type : <input  type="text" name="pizzaType" [(ngModel)] = "credentials.pizzaType"/><br><br>
+    Pizza Price : <input type="text" name="pizzaPrice" [(ngModel)] = 'credentials.pizzaPrice'/><br><br>
+<div>
+    <br><button type="submit"  >Add Pizza</button>
+</div>
+</form>
+<table *ngFor="let pizza of pizzaDetails" >
+    <tr>
+      <td> 
+        <b > {{pizza.pizzaName}}</b>
+      </td>
+      <td>
+        <b> {{pizza.pizzaType}}</b>
+    </td>
+    <td>
+        <b> {{pizza.pizzaPrice}}</b>
+    </td>
+    </tr>
+  </table>

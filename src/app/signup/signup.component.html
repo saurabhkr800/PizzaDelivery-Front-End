@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()">
+
+                   
+    userName :  <input type="text"  name="userName" required  [(ngModel)] = 'credentials.userName' /><br><br>
+
+
+
+     email : <input class = "email" name="email" required  type="email" [(ngModel)] = 'credentials.email'/><br><br>
+ 
+ 
+ 
+     password : <input  name="password" required class = "input-field" type="password" [(ngModel)] = "credentials.password"/><br><br>
+
+ 
+
+ <div>
+     <br><button type="submit"  >SignUp</button>
+ </div>
+</form>
